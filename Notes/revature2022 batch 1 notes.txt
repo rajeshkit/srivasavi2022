@@ -1,0 +1,771 @@
+Java:-
+	Java is object oriented programming
+	class and object
+	class -> is a container
+		 	-> memebrs - variable, function etc
+
+
+variable:-
+	It is an identity to the memory location
+	Types of variable:-
+	1. instance variable
+		A variable declared inside the class and outside of any 			method
+	2. static variable
+		A variable declared inside the class and outside of any 			method with the static keyword
+	3. local variable
+		A variable declared inside the class and inside any 				of the method or inside the block
+
+Functions in java:-
+==================
+		Used to perform a task or logic
+		
+		EMI cacluation - task or logic
+		
+		EMI = P * ROI / TENURE   ---- logic
+
+		Data:-	
+		P -> Data -> variable 
+		ROI -> Data -> variable
+		TENURE -> Data -> variable
+
+		AreaofCircle
+
+		area=PI*R*R;	
+		Data:
+		PI Data
+		R  Data
+		area Data	
+
+class and object
+
+	Java is an object oriented programming
+	object - real world existing things are called as object
+	Object cannot be created directly
+	From class you can create an object
+
+
+	Each Object
+		1. property
+		2. behaviour
+
+		 1. physical object	2. virtual object
+		=========================================
+		 trainee		 transaction	
+		 creditcard		 deposit
+		 customer		 email
+		 chair - 
+			property - color,size,type,material
+			behaviour - move(), sit(), adjustHeight()
+		 laptop
+		 human
+		 lock
+		 pen 
+			property - colour, size, cost
+			behaviour - write(), scrub(), fillInk()
+		 note
+	
+	Revature Online Banking - Java Language - object oriented
+	=========================================================
+		customer
+			property - name,email, phone,gender
+			behaviour- applyLoan(),depost(),withdrawl()
+		clerk
+		manager
+		cashier
+		withdrawl
+		deposit
+		cheque
+		loan
+		creditcard
+		debitcard
+		salary
+		passbook
+		
+class syntax:-
+	
+	accessmodifer class Classname{
+		members:
+		-variable - instance,static,local
+		-constructor
+		-method - instance, static
+	}
+
+Object creation syntax:
+======================
+	Classname objectname=new Classname();
+	Eg:- Customer customer1=new Customer();
+
+Naming convention of java programming:-
+======================================
+	
+	class name - each word starting letter must be in capital
+	
+	reserved keywords - for, while, do, class, public, switch, static
+		* all letters in lowercase
+	
+	variable name
+		- if variable is a single word
+			* all letters must be in lowercase
+		- if variable has more than one word
+			* First word all letters must be in lowercase
+			* second word onwards each word starting letter
+			  must be in capital
+		- if the variable is an constant variable
+			* all words letters in capital
+	method name
+		- if method name is a single word
+			* all letters must be in lowercase followed by ()
+		- if method name has more than one word
+			* First word all letters must be in lowercase
+			* second word onwards each word starting letter
+			  must be in capital follwed by ()
+	interface name - each word starting letter must be in capital
+	
+	packages name- all letters in must be in smaller letters
+
+
+https://www.oracle.com/java/technologies/javase/codeconventions-namingconventions.html
+
+Instance variable vs Static variable
+====================================
+	
+	scope - will be availabe entire class
+	memory - instance heap, static method area
+	
+	class EMI{
+		int a=10;
+		static int b=20;
+	}
+     10 object for EMI each object will have it own copies of a variable
+     10 objects for EMI class there is only copy will be created
+     static variable is created per class
+	
+	memory management:
+	================== 
+	malloc()
+	calloc()
+	
+	Deallocate:-
+	===========
+	delete()
+
+	In Java Automatic Garbage collection algorithm
+	How do we allocate:
+	Customer c1=new Customer();
+	c1=null;
+		
+	Java Devloper cannot force garbage collector to collect or clean 
+	the memory space. It is works based on the alogrith.
+	
+	but developer can request garabage collect to clean the space 		alloacted but it is upto the garabage collector
+
+	System.gc()
+	Runtime.getRuntime().gc()
+	System.runFinalize()
+
+
+	control statements:-
+		Statement:-
+			A line terminated with ; is called as statement
+	
+
+	Guidelines:-
+	===========
+		www.revaturebank.com
+
+		com.revaturebank.account
+		com.revaturebank.creditcard
+		com.revaturebank.cheque
+		com.revaturebank.loan
+
+	Packages:-
+	==========
+	Packages are a way of organizing classes, interfaces, and 		enums in a hierarchical manner. Packages follow a naming 			convention of lowercase characters separated by periods in the 		reverse way you would specify a web domain - thus, 		com.revature.mypackage instead of mypackage.revature.com.
+
+	Access Modfiers:-
+		public, private, protected, default - package
+		visibility - How far member can be accessable
+
+Variable Scopes:-
+	scope -> how far we can access the variable
+	lifetime -> how long the variable is there in the memory
+	primitive and reference variable	
+	1. instance variable
+		1.1 primitive instance variable
+		1.2 reference instance variable
+	2. static variable	
+		2.1 primitive static variable
+		2.2 reference static variable
+	3. local variable
+		3.1 primitive local variable
+		3.2 reference local variable
+	4. block variable
+
+Access Modifiers:-
+	
+	* visibility
+	* private,default,protected,public
+	* Places where u can use access modfiers
+		1. before class(class level - public, default)
+		   [accessmodifier] [nonaccessmodifier] class classname{
+			
+		   }
+		2. before variable declaration(varaible level)
+		   
+		  [accessmodifier] [nonaccessmodifier] datatype name;
+		
+		3. before methods(method level)
+		   [accessmodifier] [nonaccessmodifier] returntype name(){
+		   
+                   }
+		4. before constructor(constructor)
+		   [accessmodifier] classname(){
+		   
+		   }
+
+Non Access Modifiers:-
+	* It changes the default behaviour of the class,variable,method
+		static
+		final
+		abstract
+		synchrnized
+		transient
+		volatilze
+		strictfp
+
+Constructor:-
+	* constructor is a special memeber function
+	* constructor does not need any return type
+	* constructor name should be same as class name
+	* constrcutor will be call implicitly or automatically soon after 
+	  the object is created
+
+Arrays:-
+		int mark1
+		int mark2
+		int mark3
+		int mark4	
+		int mark5
+		int mark6
+		int mark7
+		int mark8
+		int mark9
+		int mark10
+		int mark11
+		int mark12
+	
+Array - 
+	Syntax:
+		datatype[] variable=new datatype[size];(Recommended)
+		datatype variable[]=new datatype[size];
+
+
+	Array is a collection of values and of same type which is 			pointed by a variable
+		
+	Array values can accessed by index 0 to size-1
+	
+	Array is continous memory allocation
+	
+	Array size is fixed. you cannot size or decrease the size
+	
+	Array is a random access
+
+	
+	
+	  10*32 = 320
+			
+	int mark[] ---> 78 67 45 87 90 67 99 36 45 78
+	
+	int a=56;
+
+var args:-(variable length argument)
+=========
+
+Casting:-
+==========
+	1. Type Casting
+		converting one primitive type another primitive type
+			int --> float   32bits-->32bits
+			byte --> int    8bits-->32bits
+			short --> long  16bits-->64bits
+		 	long --> byte   64bits-->8bits
+
+			1. Implicit Casting or automatic or widening
+				
+			2. Explicit Casting or narrowing
+
+	2. Object Casting
+
+Wrapper classes:-
+
+	Primitive type	    Wrapper class            Reference Type
+	--------------				     -------------
+	byte		-------------------------->    Byte
+ 	short           -------------------------->    Short
+	int 		-------------------------->    Integer
+	long		-------------------------->    Long
+	float		-------------------------->    Float
+	double		-------------------------->    Double
+	char		-------------------------->    Character
+	boolean		-------------------------->    Boolean
+
+String API:-
+============
+	* String is a collection of characters.
+	  Two ways of creating a string
+
+	  	1. String literal(Immutable)
+			String companyName="Revature";
+
+	  	2. String Object(Immutable)
+			String companyName=new String("Revature");
+
+		3. StringBuffer(Muttable) -> synchronized(multithreading)
+					     Thread safe
+					     slow(comapare to 					     stringbuilder)
+		4. StringBuilder(Muttable) -> non synchronized
+						(Non multithreading)
+					      Not thread safe
+					      Fast
+
+	* In java Strings are immutable
+
+Pillars of OOPS:-
+=================
+	* Inheritance  
+	   - To drive one class member to the other class
+	   - The class which is going to offer its members
+	     to other class called parent class or base class
+	   - The class which drive the member from other class is called 
+	     child class or drive class or subclass
+	   - extends 
+	     Types of inheritance
+		1. Single 
+		2. Multilevel
+		3. hieraichial 
+		4. multiple 
+		5. Hybrid
+	* polymorphism	
+		one thing many form
+		one task of many forms
+		  sendParcel - task
+		  sendParcel(postal)
+		  sendParcel(Courier Service)
+		  sendParcel(By myself)
+		  sendParcel(my friends)
+		  sendParcel(relatives)
+		Two types of polymorpshim
+		
+	* abstraction
+		* It is hide the complexity and will show only the 		  essentail feature
+			
+			Car -> hide the complexity
+			Essential -> steering,acc,brake, mirror,speed
+				     gear
+		* If the class is an abstract class you cannot create an
+		  object for the class
+
+		public void gear(){ // implemented method or Non abstract
+			statements;
+		}
+
+		public void gear(); // unimplemented method or abstract
+		
+	* encapsulation
+		- Capsule or bind the data and method together
+		- you can code and data together 
+
+
+Test your code:-
+===============
+	logic ->  
+		class Calculator{
+			public int add(int a,int b){
+				retrun a+b;
+			}
+		}
+	
+			
+		System Under Test class(SUT) --> Calculator
+		Unit Test:-
+			Junit Framework 5 library
+			Jupiter test runner - it will run the test cases
+			
+Exception:-
+	
+	1. Developer
+	   1.1 try catch block
+		try{
+			statements;// 
+		}
+		catch(Exceptiontype){   // handler
+			statements;
+		}
+	   1.2 throws	
+
+   Exception Propogation:-
+
+		jdk 7 onwards you can write multiple catch blocks
+
+   resources in java:-
+		
+		any java code which uses system hardwares those 
+		are called as resources
+
+			memory
+			cpu
+			input
+			output
+		Scanner s=new Scanner(System.in);
+			keyboard
+
+		FileReader fr=new FileReader("E:/rajesh.txt")
+			memory
+
+		s,fr are called as resources
+	
+			s-----> keyboard
+			fr ----> Hard disk(E:/)
+		It is a duty to release the resources
+			close() ---> Closable() interface
+			s.close()
+			fr.close()
+
+		jdk 1.7 onwards
+			try with resources
+Custom Exception:-
+==================
+
+	user have to age -> negative age exception
+	user asked to enter acc no -> Invalid account exception
+	user askes to enter a withdarwl -> InsufficientFund 
+
+	how to create an our own exception
+		custome or own checked exception
+		
+		custome or own checked exception
+
+	1. create an my own exception java class need to extends 
+	   either Exception class or RuntimeException
+	2. create a one string arg constructor
+	public class NegativeAgeException extends RuntimeException {
+
+	String message;
+
+	public NegativeAgeException(String message) {
+		super(message);
+		this.message = message;
+	}
+
+	}
+
+Collection:-
+	* Collection are used to store a group objects or references 	  	  inside a single collection variable
+
+	* Dynamic in size 
+	
+	* Collection API - is build on top of the datastructure algorithm
+			Array, Linkedlist,HashTable, Queue, Stack
+	
+	* Collection has a hirachy -> class, abstract class, interface
+				      enums etc
+		
+	Collection Interface -> abstract method - how to manuplate a group 				object		
+		
+	List(I) -> allows ordered Collection, accepts a duplicate, 
+		   allows null values
+		  
+		   ArrayList
+			-> ordered,accepts a duplicate, accepts null
+			-> backed by ds is called array
+			-> Random access ->  fast 
+			-> when less insertion / deletion
+		   LinkedList
+			-> ordered,accepts a duplicate, accepts null
+			-> backed by ds is called linkedlist
+			-> Sequential access
+			-> when more insertion / deletion
+		   Vector
+			-> ordered,accepts a duplicate, accepts null
+			-> backed by ds is called array
+			-> Multithreading environment
+			-> Thread safe(all the methods are syncronized)
+
+java.utility
+		Array -> Arrays
+		Collection -> Collections
+
+		Comparable(I) and Comparator(I)
+
+	Set(I)->  it is an unordered collection(depends on implmentation), 		  doesnot allow duplicates allows only one null(but 		 		  treeset doesnot even allow one null)
+
+		   HashTable
+		
+		   HashSet
+			-> unordered,doesnot allows duplicate, only one 			 	   null
+		   LinkedHashSet
+			-> ordered,doesnot allows duplicate, only one 			   	   	   null
+		   TreeSet	
+			-> Unorder(In Ascending),doesnot allows duplicate, 			   Not even a single null accepted
+	Queue(I) - Assoicate have to explore
+	
+Map<Key,Value>
+	Map has key and value pair
+	Key and value are object	
+	map's contents to be viewed or can iterated in diff ways
+	1. set of keys
+	2. collection of values
+	3. set of key-value mappings
+	
+	Map<K,V>(I) - it is an unordered collection(depends on 		      implementation),doesnot allow duplicates allows only 		      one null(but treeset doesnot even allow one null)
+
+		HashMap<K,V>:-
+			-> Map Key - unordered,doesnot allows duplicate, 			   only one null
+		LinkedHashMap<K,V>
+			-> Map Key - ordered,doesnot allows duplicate, 			   	   	   only one null
+		TreeMap<K,V>
+			-> Map Key -Unorder(In Ascending),doesnot allows 			   duplicate,Not even a single null accepted
+jdk 1.7
+	interface
+		- u can have only abstract method	
+Jdk 1.8 or jdk 8:-
+====================
+	Interface can have also implemeneted method:-
+	-------------------------------------------
+	Default methods interface - instance method
+	Static methods inside the interface
+	
+	Functional Interface:-
+	----------------------
+	* A interface has only one abstract method then we can say as 	  	  FunctionalInterface
+	* A Functional interface can have zero or more implmeneted methods
+	  but only one abstract method has to be there in the interface
+
+	Two types of functional interface:-
+	---------------------------------
+	1. predefined functional interface
+		Comparator
+		Comparable
+		Runnable
+		Predicate
+		Consumer
+		Function
+	2. own or custom functional interface
+		Eg: Volume 
+		    Calculator
+	
+Lambda Expression:-
+-----------------
+	* Lambda Expression provides the implmentation of functional           	  interface abstract method
+	* It is more concise code
+	* It enable Functional Programming 
+	* Lambda also called as Anonymous Function(function without name)
+	* Functional interface enables you to write lambda expression
+	()->{
+		System.out.println("show method1");
+		System.out.println("show method2");
+	}
+	
+	(a,b)->a+b; // lambda expression 		
+	
+
+
+
+	Rule for Lamda Expression:-
+	1. remove the method name
+	2. remove the method return type
+	3. remove the method access modifier and nonaccess modifier
+	4. after the method () add arrow operator ->
+	5. If your lambda has argument then remove the arg type 
+	6. If the lambda expression body has only one statement remove the 	   {}
+        7. If the lambda expression body has only one statement that too	           return statement then you can remove the return keyword
+	
+IO stream not a Stream API
+
+Stream API:-
+	-> It is going to take a group of object from the source. it 		   perform some operation returns a result
+		stream source -> Arrays,Collection,Enums
+		1. Source -> streams are created from source
+			Array,collection,enums
+		2. Intermediate Operation -> operation wanted to perform
+			filter,map,sort,min,max etc.,
+		3. Terminal Operation -> result
+			forEach, collect, count etc.,
+	-> streams internally uses lambda and functional interface
+
+	
+Collection vs Stream -> associate have to find out
+Packages
+	java.lang 
+	java.util
+	java.util.function -> Consumer,Predicate,Function
+	java.util -> collection framework
+	java.io -> input output classes
+		
+		FileSystem -> write, read
+	
+	
+		Java Code  <------->  HD (c:/ d:/ e:/ f:/)
+
+	Two Stream are available:-
+	1. byte oriented stream (read / write) - image,video,binary
+		byte - 1 byte - 8 bits (0 - 127)
+		Read -> InputStream
+		Write -> OutputStream
+	2. character oriented stream (Read / Write) - pdf, text file,xsl	
+		char - 2 bytes - 16 bits - (0 - 253)
+		Read -> Reader
+		Write -> Writer	
+
+Dependency 
+==========
+		Java Project
+			JRE System Library (java creator - oracle)
+			add the third library into your project
+			How do you 3rd party lib to your project
+
+
+			Internet you will download:-
+			Testing - Junit Framework Library (Third Party)
+			Database - Jdbc Driver Library (Third Party)
+			Logging - log4j library (Third Party)(someone)
+
+Maven:-
+=====
+	Maven is a tool that can be used for building and managing any 	Java-based project.
+	Maven is also called as project management tool
+	Maven is going to manage your project with the help of
+	1. Mavan POM file(POM - Project Object Model)
+		xml file - very important file maven
+ 		Maven project configuration and dependencies are handled 		via the Project Object Model, defined in the pom.xml file.
+	2. Maven Lifecycle 
+	3. Repositories -> all jars or dependencies are collected from 		                           different website kept in a central place
+		1. maven local repository
+			- The repo is available on your local computer
+		2. Maven remote or central repositories
+			- The repo is available on internet 
+				https://mvnrepository.com/
+
+		maven - create a java project
+		      - Simplifies the build process
+		      - Adding jars and dependencies
+		      - Documenting project information and reports
+		      
+		  groupid      artifactid	
+	Project - clientname , projectname
+			irctc -> rail ticket
+				 tourism
+	Maven Lifecycles:-
+	1. Default Lifecycle
+		Phases:
+		1.1 validate - validate the project is correct and all 				               necessary information is available
+		1.2 compile -  compile the source code of the project
+		1.3 test - test the compiled source code using a suitable 			           unit testing framework. These tests should not                             require the code be packaged or deployment
+		1.4 package - take the compiled code and package it in its 			      distributable format, such as a JAR.
+		1.5 verify - run any checks on results of integration 			                     tests to ensure quality criteria are met
+		1.6 install - install the package into the local 			                      repository, for use as a dependency in other 			      projects locally
+		1.7 deploy - done in the build environment, copies the 			     final package to the remote repository for                              sharing with other developers and projects. 
+		
+	2. Clean Lifecycle
+		2.1 clean - if the jar is already existing it will delete 			    it recreate the jar file again
+	3. Site Lifecycle
+		2.2 document for your project
+
+
+Logging:
+	ref:- 
+		https://www.sentinelone.com/blog/maven-log4j2-project/
+
+Project 0
+	Core java, maven, junit, logging, git, jdbc, sql
+
+Week 1  
+
+Week 2   Quiz(week1)  |  Trainer 1:1(week1)  | QC 1:1 (week1Thursday)
+
+Logging:-
+	log - history what had happened
+	developement + testing + build + deployments(real server)
+					 Everyday - log - logging
+
+	logging     -------------------->  administrator 
+					   log file 
+	3 Important components of logging Framework:
+	--------------------------------------------
+	1. logging level -> trace,debug,info,warn,error,fatal
+	2. Appenders -> ConsoleAppender,FileAppender,JDBCAppenders,JMSApp
+	3. PatternLayout -> date time level message	
+
+		
+
+	Logging Level
+	Java Logging Frameworks:-
+		java.util.Logging
+		apache.commons.Logging
+		Log4j -> Log4j2
+		slf4j
+		logback
+	Logging log4j2:
+	ref:- 
+		https://www.marcobehler.com/guides/java-logging
+		https://www.sentinelone.com/blog/maven-log4j2-project/
+	
+	Steps for maven log4j2 application:-	
+		log4j2 dependencies
+		<dependencies>
+  		<dependency>
+   		 <groupId>org.apache.logging.log4j</groupId>
+    		 <artifactId>log4j-api</artifactId>
+    		 <version>2.13.0</version>
+  		</dependency>
+  		<dependency>
+    			<groupId>org.apache.logging.log4j</groupId>
+    			<artifactId>log4j-core</artifactId>
+    			<version>2.13.0</version>
+  		</dependency>
+		</dependencies>
+
+		
+		FATAL
+			Anything at this level means your Java process 			cannot continue and will now terminate.
+		ERROR
+			A request was aborted and the underlying reason 			requires human intervention ASAP.
+		WARN
+			A request was not serviced satisfactorily, 			intervention is required soon, but not necessarily 			immediately.
+		
+		
+Design Pattern:-
+===============
+	* It is a solution to the problem.
+	* software developers start writing has to certain
+	* For that complexity if the solution is got implemented
+	  1. Creational Patterns(Object creation)	
+		Singleton
+			Employee e1=new Employee();
+			Employee e2=new Employee();
+			Employee e3=new Employee();
+			Employee e4=new Employee();
+		Prototype
+		Factory Method
+		Builder
+		Abstract Factory 
+	  2. Behavioral Patterns
+		
+	  3. Structural Patterns
+		
+	  ref: https://refactoring.guru/design-patterns/java
+	
+SQL:-
+
+24A/78, Anna nagar
+3rd Street, Thiruvanamalai 
+Opposite to Raju Gas Agency
+	  
+
+
+
+
+
+
+
+
