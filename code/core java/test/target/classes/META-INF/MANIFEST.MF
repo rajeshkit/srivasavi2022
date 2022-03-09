@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+Built-By: rajesh
+Build-Jdk: 11.0.7
+Main-Class: test.test.App
+Created-By: Maven Integration for Eclipse
+
