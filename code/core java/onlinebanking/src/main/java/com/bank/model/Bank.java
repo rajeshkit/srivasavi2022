@@ -33,5 +33,9 @@ public class Bank {
 	public void setIfsc(String ifsc) {
 		this.ifsc = ifsc;
 	}
-	
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return id+" "+name+" "+ifsc;
+	}
 }

@@ -1,5 +1,6 @@
 package com.bank.main;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 import com.bank.model.Bank;
@@ -38,7 +39,10 @@ public class BankMain {
 			}
 			break;
 		case 2:
-			
+			//logic get all bank
+			BankService bankService1=new BankService();
+			ArrayList<Bank> finalList=bankService1.getAllDepartments();
+			finalList.forEach((e)->System.out.println(e.toString()));
 			break;
 		case 3:
 			
