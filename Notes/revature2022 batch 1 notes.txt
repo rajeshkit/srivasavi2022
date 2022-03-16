@@ -696,7 +696,9 @@ Logging:-
 	2. Appenders -> ConsoleAppender,FileAppender,JDBCAppenders,JMSApp
 	3. PatternLayout -> date time level message	
 
-		
+	Default logging - error  --> error , fatel
+	Appender -> ConsoleAppender
+	PatternLayout -> HH:MM:SS.ms [method] level packagename - log 			 message	
 
 	Logging Level
 	Java Logging Frameworks:-
@@ -737,7 +739,7 @@ Logging:-
 Design Pattern:-
 ===============
 	* It is a solution to the problem.
-	* software developers start writing has to certain
+	* software developers start writing 
 	* For that complexity if the solution is got implemented
 	  1. Creational Patterns(Object creation)	
 		Singleton
@@ -755,17 +757,71 @@ Design Pattern:-
 		
 	  ref: https://refactoring.guru/design-patterns/java
 	
-SQL:-
+UI Technologies:-
+	website -> collection of webpages
+	webpage -> html(content),css(style),js(user interaction)
+	
+	Html:-(Hyper Text Markup Language)
+		- collection html elements and attributes
+		- html element surrouded by start tag and end tag
+		- start tag <>  end tag</>
+		- some are special self closing tag
+			<hr>	  
+		
+		- Html Document <!DCOTYPE html> -> it is going tell 		  browser - what html version used inside document 
+		Html Structure
+			<html>
+				<head>
+					<!--Meta info to the browser-->
+				</head>
 
-24A/78, Anna nagar
-3rd Street, Thiruvanamalai 
-Opposite to Raju Gas Agency
-	  
+				<body>
+					<!--content going to render on the  					browser-->
+				</body>
+			</html>
+
+
+		<h1><h1> - headers
+		<p></p> - paragraph
+		<b></b>
+		<strong></strong>
+		<i></i>
+		<em></em>
+		<abbr title="value"></abbr>
+		<address>
+		<code>
+		<ins></ins><u></u>
+		<del></del><strike></strike>
+		
+		<div></div>
+			- used to group the html elements
+
+	Html4:- 
+		-> UI developer they will div element to divide webpages 
+		   into division they will create an website
+
+	HTML5:- new element
+		Syntax and semantic tag
+		<header></header>
+		<section></section>
+		<article></article>
+		<footer></footer>
+		<aside></aside>
+
+	Forms:-
+	Used to get input from the user and send it to server
+
+	<form name="login" action="" method="get or post">
+		<!-- input controls -->
+	</form>
+	http://127.0.0.1:5500/registration.html?	firstname=Rajesh&lastname=Nallusamy
+
+
+	Elements -> inline element
+		    block element
 
 
 
 
-
-
-
+	
 
