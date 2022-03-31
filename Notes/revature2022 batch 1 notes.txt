@@ -820,8 +820,240 @@ UI Technologies:-
 	Elements -> inline element
 		    block element
 
+	elements
+	<img src="" height="" width=""></img>
+	<p style=""></p>
 
+	attribute -> key = value
+
+CSS (Cascading style sheet):-
+	- CSS stands for Cascading Style Sheets
+	- it is a language for styling HTML documents 
+	- by specifying certain style rules for layout and display 
+	- style rule - key:value pairs
+	- It used to style the webpages by setting background-color, font 		  color, font size, font family, etc.
+	
+	* A CSS consists of a set of rules that defines the styles for a 	  	  web page
+	* CSS style rule composed of 
+		1. selectors 
+		2. declarations
+	
+		selectors{
+			key:value;
+			key:value;
+			key:value;
+		}
+
+		Eg:-
+		 h3 { 
+       			font-family: Arial; 
+       			font-style: italic; 
+       			color: red;
+       		 }
+
+CSS can be written in 3 ways to style a webpage:-
+		1. inline css 
+		2. Embedded css or internal css
+		3. external css
+
+CSS Selectors:-
+	1. element selecetor
+	2. class selector
+	3. id selector
+	
+CSS Box layout:
+	margin - invisible -> top, left, right, bottom 
+	border - visible - type, color, size, top, left, right, bottom 
+	padding - invisible -> top, left, right, bottom
+	content - display content
+
+	block level elements -> margin, border, padding
+				height
+				width
+				top
+				left
+				bottom
+				right
+
+Javascript:-
+***********
+	JavaScript is the most popular and widely used client-side 			scripting language. 
+	Client-side scripting refers to scripts that run within your web 		browser. 
+	JavaScript is designed to add interactivity and dynamic effects to 	the web pages by manipulating the content returned from a web 			server.
+	
+	
+	What JS do:-
+	-----------
+	You can modify the content of a web page by adding or removing 			elements.
+	You can change the style and position of the elements on a web 			page.
+	You can monitor events like mouse click, hover, etc. and react to 		it.
+	You can perform and control transitions and animations.
+	You can create alert pop-ups to display info or warning messages 		to the user.
+	You can perform operations based on user inputs and display the 		results.
+	You can validate user inputs before submitting it to the server.
+	
+	From 2015 onwards
+		Node.js - server side script
+
+	Javascript variable naming convention:-
+	======================================
+	A javascript variable is case sensitive
+	A variable name must start with a letter, underscore (_), or 			dollar sign ($).
+	A variable name cannot start with a number.
+	A variable name can only contain alpha-numeric characters (A-z, 0		-9) and underscores.
+	A variable name cannot contain spaces.
+	A variable name cannot be a JavaScript keyword or a JavaScript 			reserved word.
+
+	Data Types in JavaScript:-
+	========================
+	Data types basically specify what kind of data can be stored and 		manipulated within a variable .
+
+	There are six basic data types in JavaScript which can be divided 		into three main categories: 
+	1. primitive (or primary) - string,number,boolean
+	2. composite (or reference) - Object, Array, Function
+	3. special data types - undefined and null.
+
+	Primitive data types can hold only one value at a time
+ 	composite data types can hold collections of values and more 			complex entities.
+
+
+	function mathodname(parameter)
+	{
+		// code	
+	}
+	
+	var g; // variable declaration
+
+	g="sdgfhd";
+
+	g=67; 
+
+
+	JS -> it is not strict type language. Loosly typed language
+
+		datatype variable;
+	js Array:-
+		var a=[346,676,34,"rajesh",true,null];
+
+	js object  -> property
+		   -> key:value 
+		   -> if u have more than one property then each property 		      sererated by (,) 			
+Variable Scope:
+	The Variable scope defines the lifetime and visibility of a 	variable. 
+	Each variable associated with a scope. 
+	The variable can be accessed only within its scope.
+	1. Global variable
+		- outside of any function, block , module
+	2. Function scope
+		function name{
+			var a; // function scope
+		}	
+	3. local scope
+		{
+			var a;
+		}
+	5. block scope
+		{
+			let a;
+			const a;
+		}
+		var 
+		ECMA 2015 or ES6 -> let, const
+			
+JavaScript is a loosely typed scripting language. JavaScript allows strictness of code by using "use strict"; statement at the top of JavaScript code or in a function.	
+
+The strict mode in JavaScript does not allow us to use 
+	undefined variables
+	reserved keywords as variable or function name
+	duplicate properties of an object
+	duplicate parameters of the function
+	assign values to read-only properties
+	Modifying arguments object
+	Deleting an undeletable property.	
+
+DM tree API:-
+	getElementById("idname")
+	getElementByName("name");
+	getElementsByTagName("htmlelement")
+	getElementsByClassName("classname")	
+	
+
+Javascript --------> ECMA -> ECMAScript(standard for scripting)
+	
+Responsive Design:
+	* viewport width
+	* CSS Media queries - breakpoints
+	* flex grid layout and flex box
+	* always relative units %,em,vh,vw
+
+Bootstrap:-
+	
+	* UI framework for responsive web page
+	* fastest developement
+	
+	 - css ->  bootstrap.min.css (styles)
+	 - js files -> popper.min.js, bootstrap.min.js(interaction)
+
+	How to use bootstrap in webpage:-
+	1. Downloading
+	2. CDN
+	
 
 
 	
+
+Git:-
+	Git is a free and open-source version control system
+	
+	git command
+		git --version
+		git init - intialize and create a local repository
+		git status 
+		git add filepath
+		git commit -m "commit message"
+		git branch
+
+Process -> .exe
+	 -> Process - word -> HD c:/pf/windows/office/winword
+		winword.exe
+	 ->     mspaint.exe
+		chrome.exe
+		fifafootball.exe
+		java.exe
+		
+
+	HD----------------> RAM -----------------> Processor
+	chrome 		    chrome		   chrome.exe
+	notepad		    notepad		   notepad.exe
+	winword		    winword		   winword.exe
+
+
+Multitasking:-
+	- mulitprocessing
+	- multithreading	
+Thread:-
+	Extending thread class
+	implementing runnable interface
+
+
+Thread priority
+		0 - 10
+		0 - LOW
+		5 - Normal
+		10 - High 
+
+
+Servlets:-
+	- server side java code
+	- servlets are java program but it is capable handle HttpRequest 	  	  and HttpResponse
+
+
+
+
+
+
+
+
+
+
 
