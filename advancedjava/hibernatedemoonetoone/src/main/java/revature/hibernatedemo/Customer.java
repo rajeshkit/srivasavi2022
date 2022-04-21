@@ -1,9 +1,13 @@
 package revature.hibernatedemo;
 
 import java.io.Serializable;
+import java.util.List;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
 
 @Entity
 public class Customer implements Serializable {
@@ -12,6 +16,10 @@ public class Customer implements Serializable {
 	private String name;
 	private String email;
 	private String phone;
+	
+	@OneToOne
+	private Loan loan;
+	
 	public int getAccountNo() {
 		return accountNo;
 	}
@@ -35,6 +43,16 @@ public class Customer implements Serializable {
 	}
 	public void setPhone(String phone) {
 		this.phone = phone;
+	}
+	@Override
+	public String toString() {
+		return "Customer [accountNo=" + accountNo + ", name=" + name + ", email=" + email + ", phone=" + phone + "]";
+	}
+	public Loan getLoan() {
+		return loan;
+	}
+	public void setLoan(Loan loan) {
+		this.loan = loan;
 	}
 	
 	

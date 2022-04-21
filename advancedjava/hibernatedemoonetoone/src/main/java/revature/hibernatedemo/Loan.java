@@ -1,7 +1,10 @@
 package revature.hibernatedemo;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 import javax.persistence.OneToOne;
 
 @Entity
@@ -10,7 +13,7 @@ public class Loan {
 	private int loanId;
 	private String loanName;
 	private float loanAmount;
-	@OneToOne
+	@OneToOne(mappedBy = "loan")
 	private Customer customer;
 	
 	public int getLoanId() {
@@ -37,5 +40,6 @@ public class Loan {
 	public void setCustomer(Customer customer) {
 		this.customer = customer;
 	}
+	
 	
 }

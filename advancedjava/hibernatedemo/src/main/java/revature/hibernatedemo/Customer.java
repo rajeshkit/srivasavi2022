@@ -2,14 +2,20 @@ package revature.hibernatedemo;
 
 import java.io.Serializable;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
-@Entity
+@Entity(name = "CustomerDetails")
+@Table(name = "bankcustomer")
 public class Customer implements Serializable {
 	@Id
+	@Column(name = "account_number")
 	private int accountNo;
+	@Column(name = "account_holder_name",nullable = false, length = 30)
 	private String name;
+	@Column(name="customer_email",unique = true, length = 50)
 	private String email;
 	private String phone;
 	public int getAccountNo() {

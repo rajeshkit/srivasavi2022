@@ -10,18 +10,21 @@ public class App
     {
     	Configuration con=new Configuration();
     	con.configure("hibernate.cfg.xml");
-    	con.addAnnotatedClass(Loan.class);
+    	con.addAnnotatedClass(Customer.class);
     	SessionFactory sf = con.buildSessionFactory();
     	Session s=sf.openSession();
-    	Loan l1=new Loan();
-    	l1.setLoanAmount(100000);
-    	l1.setLoanId(2000);
-    	l1.setLoanName("Personal Loan");
+    	Customer c=new Customer();
+    	c.setAccountNo(2000);
+    	c.setEmail("ajay@gmail.com");
+    	c.setName("ajay");
+    	c.setPhone("567567657");
     	s.beginTransaction();
-    	s.save(l1);
+    	s.save(c);
     	s.getTransaction().commit();
     	s.close();
-       //insertCustomer();
+      
+    	
+    	//insertCustomer();
     	// getCustomerByAccountNo();
     	
     	//updateCustomer();

@@ -16,6 +16,6 @@
 	<!-- show all generate SQL query -->
 	<property name="show_sql">true</property>
 			<!-- Drop the existing tables and create new one --> 
-			<property name="hbm2ddl.auto">update</property>
+			<property name="hbm2ddl.auto">create</property>
 		</session-factory> 
 </hibernate-configuration>
