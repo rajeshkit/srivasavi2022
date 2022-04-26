@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="player1" class="revature.iocdemo.Player">
+    	<property name="playerId" value="100"></property><!-- setter -->
+    	<property name="playerName" value="yuvraj Singh"></property><!-- setter -->
+    	<property name="teamName" value="India"></property><!-- setter -->
+    </bean>
+     <bean id="player2" class="revature.iocdemo.Player">
+    	<constructor-arg name="playerId" value="300"></constructor-arg>
+    	<constructor-arg name="playerName" value="Dhoni"></constructor-arg>
+    	<constructor-arg name="teamName" value="CSK"></constructor-arg>
+    </bean>
+
+</beans>
